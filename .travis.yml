@@ -12,6 +12,8 @@ install:
 # Scripts to be run such as tests
 before_script:
    - echo "no tests"
+   - export TIMEOUT=3000
+   - echo "$TIMEOUT"
 
 script:
    - docker --version # print the version for logging
